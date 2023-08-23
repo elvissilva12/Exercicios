@@ -1,0 +1,25 @@
+def calculadora(num1, num2, operacao):
+  soma = num1 + num2
+  sub  = num1 - num2
+  mult = num1 * num2
+  div  = num1 / num2
+
+  if (operacao == 1): 
+    return soma
+  elif (operacao == 2):
+    return sub
+  elif (operacao == 3):
+    return mult
+  elif (operacao == 4):
+    return div
+  elif (operacao < 1) or (operacao > 4):
+    return "0"
+
+print("Calculadora \n")
+
+num1 = int(input("Digite um número "))
+num2 = int(input("Digite o segundo número "))
+operacao = int(input("Digite o numero da operação desejada \n 1. Soma \n 2. Subtração \n 3. Multiplicação \n 4. Divisão \n \n"))
+
+resultado = calculadora(num1, num2, operacao)
+print("O total é : " + str(resultado))
