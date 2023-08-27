@@ -1,0 +1,24 @@
+Desenvolva um programa que recebe do usuário nome completo e ano de nascimento que seja entre 1922 e 2021.
+A partir dessas informações, o sistema mostrará o nome do usuário e a idade que completou, ou completará, no ano atual (2022).
+
+Caso o usuário não digite um número ou apareça um inválido no campo do ano, o sistema informará o erro e continuará perguntando até que um valor correto seja preenchido.
+
+def calcularIdade():
+  nome = input("Qual  o seu nome completo? " "\n")
+  print("Qual o seu ano de nascimento? ")
+  idade = 0
+  numero_valido = False
+
+  while(numero_valido == False):
+    try:
+      ano = int(input())
+      if(ano < 1922) or (ano > 2021):
+        print("O ano de nascimento precisa estar entre 1922 e 2021")
+      else:
+        idade = 2022 - ano
+        print("Olá " + nome + ", em 2022 você irá completar " + str(idade) + " anos.")
+        numero_valido = True
+    except:
+      print("Você precisa digitar um número inteiro")
+
+calcularIdade()
