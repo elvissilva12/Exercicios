@@ -8,7 +8,7 @@
 <body>
     <main>
         <header>
-            <span>Destinos Incríveis</span>
+            <span><strong>Destinos Incríveis</strong></span>
             <nav>
                 <ul>
                     <li><a href="#">Passagens</a></li>
@@ -17,7 +17,7 @@
                 </ul>
             </nav>
         </header>
-    <h1>Bem vindo ao Destinos Incríveis !</h1>
+    <h1>Bem vindo a Destinos Incríveis !</h1>
     <h2>Sobre nós:</h2>
     <p>A Destinos Incríveis te ajuda a conhecer o mundo com dicas sobre lugares fantásticos voltados para toda família,
        o nosso objetivo é alinhar os melhores destinos com dicas certeiras para que você tenha uma experiência 
